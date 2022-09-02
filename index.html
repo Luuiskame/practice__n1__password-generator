@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Password generator</title>
+</head>
+<body>
+    <main class="hero">
+        <div class="logo__container">
+            <h2 class="logo">Password<span class="logo__gradient"> Generator</span></h2>
+        </div>
+        <form action="" class="app" id="app">
+            <div class="row number__of-caracters">
+                <div class="col">
+                    <label for="number__of-caracters">Number of caracters</label>
+                </div>
+                
+                <div class="col buttons">
+                    <div>
+                        <button class="btn" id="btn__minus-one"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <input type="text" id="number__of-caracters" readonly value="12">
+                    </div>
+                    <div>
+                        <button class="btn" id="btn__plus-one"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row simbols">
+                <div class="col">
+                    <label for="simbols">Would you like to add simbols?</label>
+                </div>
+                <div class="col">
+                    <button class="btn false" id="btn__simbols"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="row numbers">
+                <div class="col">
+                    <label for="numbers">Would you like to add numbers?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn__numbers"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+
+            
+            <div class="row capital__letters">
+                <div class="col">
+                    <label for="capital__letters">Would you like to add capital letters?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn__capital-letters"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="row generator">
+                <div class="col">
+                    <button class="btn btn__generator" id="btn__generator">generate <i class="fa-solid fa-lock"></i></button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input__password" value="Th33sz#k" id="input__password" readonly>
+                </div>
+            </div>
+        
+                <div class="row alert">
+                    <div class="col">
+                    <div class="alert__copied" id="alert__copied">
+                        <p><i class="fa-solid fa-copy"></i> text copied</p>
+                    </div>
+                    </div>
+                </div>
+        </form>
+    </main>
+    
+    <script src="code.js"></script>
+</body>
+</html>
