@@ -81,7 +81,7 @@
         finalCaracters = finalCaracters.split(' ');
 
         for (var i = 0; i < settings.caracteres; i++) {
-            password += finalCaracters[Math.floor(Math.random() * finalCaracters.length)];
+            password += finalCaracters[Math.floor(Math.random() * finalCaracters.length)]; 
         }
         app.elements.namedItem('input__password').value = password;
     }
@@ -99,3 +99,5 @@
     generatePassword();
 
 }())
+
+// sexo
